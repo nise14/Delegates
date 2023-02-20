@@ -108,5 +108,14 @@ Action<int, int> action6 = (x, y) =>
 action6(0, -1);
 #endregion
 
+#region Functions
+Console.WriteLine("FUNCTIONS");
+//El ulitmo int es el tipo de valor que retorna la funcion
+Func<int, int, int> suma = (num1, num2)=>num1+num2;
+Console.WriteLine(suma(1,2));
+
+Func<Person, bool> func2 = p => p.Age > 20;
+Console.WriteLine(func2(person1));
+#endregion
 public delegate bool AgesGreatherTo20(int age);
 
